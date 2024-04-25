@@ -7,7 +7,7 @@ public class AddTwoNumbers {
 		int N1 = 20;
 		int N2 = 4;
 		int add = N1 +N2;
-	System.out.println(add);
+	System.out.println("The sum is:" +" "+ add);
 
 	}
 
