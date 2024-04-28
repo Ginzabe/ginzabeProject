@@ -1,6 +1,6 @@
-package runable;
+package javaBasic;
 
-public class Food {
+public class G3Food {
 
 	public static void main(String[] args) {
 		

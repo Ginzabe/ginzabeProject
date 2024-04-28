@@ -1,6 +1,6 @@
-package runable;
+package javaBasic;
 
-public class Birthday {
+public class G2Birthday {
 
 	public static void main(String[] args) {
 		

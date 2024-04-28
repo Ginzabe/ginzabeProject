@@ -1,6 +1,6 @@
-package runable;
+package javaBasic;
 
-public class G1 {
+public class G1Hello {
 
 	public static void main(String[] args) {
 		String greeting = "Hello";

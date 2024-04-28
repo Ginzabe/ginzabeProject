@@ -1,6 +1,6 @@
-package runable;
+package javaBasic;
 
-public class GinzabeAdventaure {
+public class G6GinzabeAdventaure {
 
 	public static void main(String[] args) {
 		// Create code snippets around your travels

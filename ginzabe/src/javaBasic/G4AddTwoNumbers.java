@@ -1,6 +1,6 @@
-package runable;
+package javaBasic;
 
-public class AddTwoNumbers {
+public class G4AddTwoNumbers {
 
 	public static void main(String[] args) {
 		

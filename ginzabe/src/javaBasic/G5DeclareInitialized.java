@@ -1,6 +1,6 @@
-package runable;
+package javaBasic;
 
-public class DeclareInitialized {
+public class G5DeclareInitialized {
 
 	public static void main(String[] args) {
 
