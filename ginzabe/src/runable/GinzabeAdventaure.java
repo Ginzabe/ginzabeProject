@@ -6,9 +6,13 @@ public class GinzabeAdventaure {
 		// Create code snippets around your travels
 
 		// Create variables that store each your names
-
-		String GT1 = "Tensay";
-		String GT2 = "Mintesnote";
+// ...first declared
+		String GT1 ;
+		String GT2 ;
+		
+//....initialized
+		GT1 = "Tensay";
+		 GT2 = "Mintesnote";
 
 		// Combine your names with the space in between and display the combination
 
