@@ -11,7 +11,7 @@ public class Food {
 		System.out.println(love + thing);
 		
 		
-		
+	//doubles are numbers with a decimal place	
 		String mystring = "4";
 		int myNumber = 4;
 		double myDouble = 4.0;
