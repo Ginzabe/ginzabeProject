@@ -1,4 +1,4 @@
-package javaBasic;
+package ginzabejavaBasic;
 
 public class G5DeclareInitialized {
 

@@ -1,4 +1,4 @@
-package javaBasic;
+package ginzabejavaBasic;
 
 public class G6GinzabeAdventaure {
 
@@ -7,6 +7,7 @@ public class G6GinzabeAdventaure {
 
 		// Create variables that store each your names
 // ...first declared
+		//....initialized
 		String GT1 ;
 		String GT2 ;
 		
