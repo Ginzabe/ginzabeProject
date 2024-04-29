@@ -1,5 +1,7 @@
 package ginzabejavaBasic;
 
+import java.lang.reflect.Type;
+
 public class G5DeclareInitialized {
 
 	public static void main(String[] args) {
@@ -7,14 +9,17 @@ public class G5DeclareInitialized {
 		// Declared and set to hold different data types
 
 		String myString;
-		int myInteger;
+		int myInteger ;
 		double myDouble;
 
 		// Initialized values
 
 		myString = "ginzabe";
 		myInteger = 6;
-		myDouble = 6.0;
+		myDouble = 6.0; 
+		
+		
+		
 	}
 
 }
