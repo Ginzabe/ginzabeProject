@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="scripts.HomePageScript">
+      <class name="RestAssuredwithJsonSimple.postRequest">
         <methods>
-          <include name="addToCart"/>
-          <include name="Setup"/>
-          <include name="TearOut"/>
-          <include name="Syncronization"/>
+          <include name="getrequest1"/>
         </methods>
-      </class> <!-- scripts.HomePageScript -->
+      </class> <!-- RestAssuredwithJsonSimple.postRequest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
