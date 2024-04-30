@@ -5,7 +5,7 @@
     <classes>
       <class name="RestAssuredwithJsonSimple.postRequest">
         <methods>
-          <include name="getrequest1"/>
+          <include name="getrequest2"/>
         </methods>
       </class> <!-- RestAssuredwithJsonSimple.postRequest -->
     </classes>

@@ -5,18 +5,17 @@ import static org.testng.Assert.assertEquals;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import io.restassured.RestAssured;
+import static io.restassured.RestAssured.*;
 import io.restassured.response.Response;
 
-//import io.restassured.RestAssured.*;
-//io.restassured.matcher.RestAssuredMatchers.*;
-//org.hamcrest.Matchers.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
 public class postRequest {
 
 	@Test()
 	public void getrequest1() {
 		// get API request end point
-		Response response = RestAssured.get("https://reqres.in/api/users?page=2");
+		Response response = get("https://reqres.in/api/users?page=2");
 
 		// print get status code
 		//get execution time
@@ -32,8 +31,29 @@ public class postRequest {
 		
 		//Pass and fail Scenario
 		int statusCode = response.getStatusCode();
-		Assert.assertEquals(statusCode, 202);
+		Assert.assertEquals(statusCode, 200);
+					
+		}
 		
+	@Test
+	public void getrequest2() {
+		
+		//base url
+		
+		baseURI = "https://reqres.in/api/";
+		
+		//pass given end point
+		// validate status code
+		
+		given().
+		get("users?page=2").
+		then().
+		statusCode(200).
+		
+		//use this rest assured format to get a body --- .body("lotto.lottoId", equalTo(5));
+	    //use Json path finder to get body data
+		body("data[1].id", equalTo(8));
+	
 	}
 
 }
