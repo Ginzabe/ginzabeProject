@@ -10,7 +10,7 @@ import io.restassured.response.Response;
 
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
-public class postRequest {
+public class getRequest {
 
 	@Test()
 	public void getrequest1() {
@@ -42,8 +42,10 @@ public class postRequest {
 		
 		baseURI = "https://reqres.in/api/";
 		
-		//pass given end point
+		// // Send a GET request to the specified end point
 		// validate status code
+		//body data for id 8
+		//return all response data with log.all
 		
 		given().
 		get("users?page=2").
@@ -52,7 +54,8 @@ public class postRequest {
 		
 		//use this rest assured format to get a body --- .body("lotto.lottoId", equalTo(5));
 	    //use Json path finder to get body data
-		body("data[1].id", equalTo(8));
+		body("data[1].id", equalTo(8)).
+		log().all();
 	
 	}
 

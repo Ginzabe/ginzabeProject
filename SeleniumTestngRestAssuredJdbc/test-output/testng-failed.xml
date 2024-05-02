@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RestAssuredwithJsonSimple.postRequest">
+      <class name="RestAssuredwithJsonSimple.getRequest2">
         <methods>
-          <include name="getrequest2"/>
+          <include name="testGet"/>
         </methods>
-      </class> <!-- RestAssuredwithJsonSimple.postRequest -->
+      </class> <!-- RestAssuredwithJsonSimple.getRequest2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
