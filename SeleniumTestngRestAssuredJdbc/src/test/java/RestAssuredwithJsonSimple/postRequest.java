@@ -9,7 +9,7 @@ import java.util.Map;
 
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
-public class getPost {
+public class postRequest {
 
 	@Test()
 	
