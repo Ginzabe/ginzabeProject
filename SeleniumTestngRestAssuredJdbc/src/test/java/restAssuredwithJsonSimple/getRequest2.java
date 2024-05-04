@@ -1,4 +1,4 @@
-package RestAssuredwithJsonSimple;
+package restAssuredwithJsonSimple;
 
 import org.testng.annotations.Test;
 

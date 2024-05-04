@@ -1,4 +1,4 @@
-package RestAssuredwithJsonSimple;
+package restAssuredwithJsonSimple;
 
 import static org.testng.Assert.assertEquals;
 

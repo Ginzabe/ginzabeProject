@@ -1,4 +1,4 @@
-package RestAssuredwithJsonSimple;
+package restAssuredwithJsonSimple;
 
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
