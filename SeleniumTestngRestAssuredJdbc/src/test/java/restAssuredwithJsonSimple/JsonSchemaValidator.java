@@ -7,7 +7,8 @@ import static org.hamcrest.Matchers.hasItems;
 
 import org.testng.annotations.Test;
 
-public class getRequest2 {
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+public class JsonSchemaValidator {
 
 	@Test
 	public void testGet() {
@@ -16,16 +17,14 @@ public class getRequest2 {
 		
 		given().
 		get("/users?page=2").
-		then().statusCode(200).
-		body("data[1].id", equalTo(8)). //find by id 8
-		log().all(). // if you want log the content
-		body("data[4].first_name", equalTo("George")).
-		//find by first name
-		body("data.first_name",hasItems("George","Rachel")); // find by multiple first name
+		then().
+		//json schema validator
+		//This validation is made for rest.in > get response
+		assertThat().body(matchesJsonSchemaInClasspath("schema.json")).
+		statusCode(200);
+		
 		
 		
 	}
-
-
-	}
-
+	
+}
