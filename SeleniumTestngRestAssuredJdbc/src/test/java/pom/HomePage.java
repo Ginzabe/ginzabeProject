@@ -17,7 +17,7 @@ public class HomePage {
 
 	}
 
-	// home main functional elements
+	// home page main functional elements
 
 	public WebElement careerPath() {
 		return driver.findElement(By.xpath(
