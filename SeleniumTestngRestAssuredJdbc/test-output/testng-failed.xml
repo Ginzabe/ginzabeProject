@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="restAssuredwithJsonSimple.JsonSchemaValidator">
+      <class name="scripts.HomePageScript">
         <methods>
-          <include name="testGet"/>
+          <include name="Setup"/>
+          <include name="numberOfCourseSubscribers"/>
+          <include name="TearOut"/>
+          <include name="Syncronization"/>
         </methods>
-      </class> <!-- restAssuredwithJsonSimple.JsonSchemaValidator -->
+      </class> <!-- scripts.HomePageScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

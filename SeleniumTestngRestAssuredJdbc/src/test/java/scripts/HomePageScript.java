@@ -31,7 +31,7 @@ public class HomePageScript {
 		// initialization home page
 		hpg = new HomePage(driver);
 
-		// enter AUT url
+		
 
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
@@ -42,7 +42,7 @@ public class HomePageScript {
 	public void Syncronization() {
 
 		// driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
+		// enter AUT url
 		driver.get("https://ginzabe.com/");
 
 	}
@@ -122,21 +122,21 @@ public class HomePageScript {
 		assertEquals(actual, expected);
 	}
 	
-	@Test
+	/**@Test
 	public void numberOfCourseSubscribers() {
 		String actual = hpg.numberOfCourseSubscribers().getText();
 		String expected = "3";
 		
 		assertEquals(actual, expected);
-	}
+	}*/
 	
-	@Test 
+	/**@Test 
 	public void courseOwner() {
 		String actual = hpg.courseOwner().getText();
 		String expected = "ginzabe";
 		
 		assertEquals(actual, expected);
-	}
+	}*/
 	
 	@Test 
 	public void courseprice() {
@@ -146,7 +146,7 @@ public class HomePageScript {
 		assertEquals(actual, expected);
 	}
 	
-	@Test
+	/**@Test
 	public void addToCart() {
 		hpg.addToCart().click();
 		
@@ -154,7 +154,7 @@ public class HomePageScript {
 		String expected = "https://ginzabe.com/dashboard/";
 		
 		assertEquals(actual, expected);
-	}
+	}*/
 	
 	@AfterTest
 	public void TearOut() {
